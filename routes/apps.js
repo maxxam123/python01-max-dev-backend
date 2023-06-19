@@ -44,4 +44,14 @@ router.get("/:id", async (req,res)=>{
     }
 })
 
+// Timeline posts
+router.get("/timeline/all/:id", async (req, res) => {
+    try{
+        const aPosts = await App.find({ desc: req.params.id})
+        res.json(aPosts)
+    }catch (err) {
+        res.status(500).json(err);
+    }
+})
+
 module.exports = router;
