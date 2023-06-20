@@ -8,6 +8,7 @@ const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 const postRoute = require("./routes/posts");
 const appRoute = require("./routes/apps");
+const newRoute = require("./routes/news");
 var cors = require('cors')
 
 
@@ -46,6 +47,7 @@ app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/apps", appRoute);
+app.use("/api/news", newRoute);
 
 app.get("/api", (req, res) => {
     res.json({ "users": ["userOne", "userTwo", "userThree"] })
