@@ -28,6 +28,7 @@ mongoose.connect(url, connectionParams)
         console.error(`Error connecting to database.n${err}`);
     })
 
+//midel
 //middleware
 //const corsOptions = { 
     // origin:'https://abc.onrender.com',
