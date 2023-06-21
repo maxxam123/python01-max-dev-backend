@@ -29,7 +29,6 @@ mongoose.connect(url, connectionParams)
     })
 
 //middleware
-//middleware
 //const corsOptions = { 
     // origin:'https://abc.onrender.com',
 //    AccessControlAllowOrigin: '*',  
